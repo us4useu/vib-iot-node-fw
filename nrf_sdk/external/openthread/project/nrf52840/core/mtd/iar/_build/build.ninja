@@ -1,0 +1,173 @@
+#Generating source browse information for project ot_nrf52840_libopenthread_mtd_nrf52840
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build address_resolver.pbi : index address_resolver.xcl
+build aes_ccm.pbi : index aes_ccm.xcl
+build aes_ecb.pbi : index aes_ecb.xcl
+build announce_begin_client.pbi : index announce_begin_client.xcl
+build announce_begin_server.pbi : index announce_begin_server.xcl
+build announce_sender.pbi : index announce_sender.xcl
+build backbone_router_api.pbi : index backbone_router_api.xcl
+build backbone_router_ftd_api.pbi : index backbone_router_ftd_api.xcl
+build border_agent.pbi : index border_agent.xcl
+build border_router_api.pbi : index border_router_api.xcl
+build channel_manager.pbi : index channel_manager.xcl
+build channel_manager_api.pbi : index channel_manager_api.xcl
+build channel_mask.pbi : index channel_mask.xcl
+build channel_monitor.pbi : index channel_monitor.xcl
+build channel_monitor_api.pbi : index channel_monitor_api.xcl
+build child_supervision.pbi : index child_supervision.xcl
+build child_supervision_api.pbi : index child_supervision_api.xcl
+build child_table.pbi : index child_table.xcl
+build coap.pbi : index coap.xcl
+build coap_api.pbi : index coap_api.xcl
+build coap_message.pbi : index coap_message.xcl
+build coap_secure.pbi : index coap_secure.xcl
+build coap_secure_api.pbi : index coap_secure_api.xcl
+build commissioner.pbi : index commissioner.xcl
+build commissioner_api.pbi : index commissioner_api.xcl
+build crc16.pbi : index crc16.xcl
+build crypto_api.pbi : index crypto_api.xcl
+build data_poll_handler.pbi : index data_poll_handler.xcl
+build data_poll_sender.pbi : index data_poll_sender.xcl
+build dataset.pbi : index dataset.xcl
+build dataset_api.pbi : index dataset_api.xcl
+build dataset_ftd_api.pbi : index dataset_ftd_api.xcl
+build dataset_local.pbi : index dataset_local.xcl
+build dataset_manager.pbi : index dataset_manager.xcl
+build dataset_manager_ftd.pbi : index dataset_manager_ftd.xcl
+build dhcp6_client.pbi : index dhcp6_client.xcl
+build dhcp6_server.pbi : index dhcp6_server.xcl
+build diags_api.pbi : index diags_api.xcl
+build dns_api.pbi : index dns_api.xcl
+build dns_client.pbi : index dns_client.xcl
+build dtls.pbi : index dtls.xcl
+build ecdsa.pbi : index ecdsa.xcl
+build energy_scan_client.pbi : index energy_scan_client.xcl
+build energy_scan_server.pbi : index energy_scan_server.xcl
+build entropy_api.pbi : index entropy_api.xcl
+build factory_diags.pbi : index factory_diags.xcl
+build flash.pbi : index flash.xcl
+build heap.pbi : index heap.xcl
+build heap_api.pbi : index heap_api.xcl
+build hmac_sha256.pbi : index hmac_sha256.xcl
+build icmp6.pbi : index icmp6.xcl
+build icmp6_api.pbi : index icmp6_api.xcl
+build indirect_sender.pbi : index indirect_sender.xcl
+build instance.pbi : index instance.xcl
+build instance_api.pbi : index instance_api.xcl
+build ip6.pbi : index ip6.xcl
+build ip6_address.pbi : index ip6_address.xcl
+build ip6_api.pbi : index ip6_api.xcl
+build ip6_filter.pbi : index ip6_filter.xcl
+build ip6_headers.pbi : index ip6_headers.xcl
+build ip6_mpl.pbi : index ip6_mpl.xcl
+build jam_detection_api.pbi : index jam_detection_api.xcl
+build jam_detector.pbi : index jam_detector.xcl
+build joiner.pbi : index joiner.xcl
+build joiner_api.pbi : index joiner_api.xcl
+build joiner_router.pbi : index joiner_router.xcl
+build key_manager.pbi : index key_manager.xcl
+build link_api.pbi : index link_api.xcl
+build link_quality.pbi : index link_quality.xcl
+build link_raw.pbi : index link_raw.xcl
+build link_raw_api.pbi : index link_raw_api.xcl
+build logging.pbi : index logging.xcl
+build logging_api.pbi : index logging_api.xcl
+build lowpan.pbi : index lowpan.xcl
+build mac.pbi : index mac.xcl
+build mac_filter.pbi : index mac_filter.xcl
+build mac_frame.pbi : index mac_frame.xcl
+build mac_types.pbi : index mac_types.xcl
+build mbedtls.pbi : index mbedtls.xcl
+build mesh_forwarder.pbi : index mesh_forwarder.xcl
+build mesh_forwarder_ftd.pbi : index mesh_forwarder_ftd.xcl
+build mesh_forwarder_mtd.pbi : index mesh_forwarder_mtd.xcl
+build meshcop.pbi : index meshcop.xcl
+build meshcop_leader.pbi : index meshcop_leader.xcl
+build meshcop_tlvs.pbi : index meshcop_tlvs.xcl
+build message.pbi : index message.xcl
+build message_api.pbi : index message_api.xcl
+build mle.pbi : index mle.xcl
+build mle_router.pbi : index mle_router.xcl
+build mle_types.pbi : index mle_types.xcl
+build netdata_api.pbi : index netdata_api.xcl
+build netdiag_api.pbi : index netdiag_api.xcl
+build netif.pbi : index netif.xcl
+build network_data.pbi : index network_data.xcl
+build network_data_leader.pbi : index network_data_leader.xcl
+build network_data_leader_ftd.pbi : index network_data_leader_ftd.xcl
+build network_data_local.pbi : index network_data_local.xcl
+build network_diagnostic.pbi : index network_diagnostic.xcl
+build network_time_api.pbi : index network_time_api.xcl
+build notifier.pbi : index notifier.xcl
+build otns.pbi : index otns.xcl
+build panid_query_client.pbi : index panid_query_client.xcl
+build panid_query_server.pbi : index panid_query_server.xcl
+build parse_cmdline.pbi : index parse_cmdline.xcl
+build pbkdf2_cmac.pbi : index pbkdf2_cmac.xcl
+build radio.pbi : index radio.xcl
+build radio_callbacks.pbi : index radio_callbacks.xcl
+build radio_platform.pbi : index radio_platform.xcl
+build random_crypto_api.pbi : index random_crypto_api.xcl
+build random_manager.pbi : index random_manager.xcl
+build random_noncrypto_api.pbi : index random_noncrypto_api.xcl
+build router_table.pbi : index router_table.xcl
+build server_api.pbi : index server_api.xcl
+build settings.pbi : index settings.xcl
+build sha256.pbi : index sha256.xcl
+build slaac_address.pbi : index slaac_address.xcl
+build sntp_api.pbi : index sntp_api.xcl
+build sntp_client.pbi : index sntp_client.xcl
+build src_match_controller.pbi : index src_match_controller.xcl
+build string.pbi : index string.xcl
+build sub_mac.pbi : index sub_mac.xcl
+build sub_mac_callbacks.pbi : index sub_mac_callbacks.xcl
+build tasklet.pbi : index tasklet.xcl
+build tasklet_api.pbi : index tasklet_api.xcl
+build thread_api.pbi : index thread_api.xcl
+build thread_ftd_api.pbi : index thread_ftd_api.xcl
+build thread_netif.pbi : index thread_netif.xcl
+build time_sync_service.pbi : index time_sync_service.xcl
+build timer.pbi : index timer.xcl
+build timestamp.pbi : index timestamp.xcl
+build tlvs.pbi : index tlvs.xcl
+build topology.pbi : index topology.xcl
+build trickle_timer.pbi : index trickle_timer.xcl
+build udp6.pbi : index udp6.xcl
+build udp_api.pbi : index udp_api.xcl
+build ot_nrf52840_libopenthread_mtd_nrf52840_part0.pbi : link address_resolver.pbi aes_ccm.pbi aes_ecb.pbi announce_begin_client.pbi announce_begin_server.pbi announce_sender.pbi backbone_router_api.pbi backbone_router_ftd_api.pbi border_agent.pbi border_router_api.pbi channel_manager.pbi channel_manager_api.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part1.pbi : link channel_mask.pbi channel_monitor.pbi channel_monitor_api.pbi child_supervision.pbi child_supervision_api.pbi child_table.pbi coap.pbi coap_api.pbi coap_message.pbi coap_secure.pbi coap_secure_api.pbi commissioner.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part2.pbi : link commissioner_api.pbi crc16.pbi crypto_api.pbi data_poll_handler.pbi data_poll_sender.pbi dataset.pbi dataset_api.pbi dataset_ftd_api.pbi dataset_local.pbi dataset_manager.pbi dataset_manager_ftd.pbi dhcp6_client.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part3.pbi : link dhcp6_server.pbi diags_api.pbi dns_api.pbi dns_client.pbi dtls.pbi ecdsa.pbi energy_scan_client.pbi energy_scan_server.pbi entropy_api.pbi factory_diags.pbi flash.pbi heap.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part4.pbi : link heap_api.pbi hmac_sha256.pbi icmp6.pbi icmp6_api.pbi indirect_sender.pbi instance.pbi instance_api.pbi ip6.pbi ip6_address.pbi ip6_api.pbi ip6_filter.pbi ip6_headers.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part5.pbi : link ip6_mpl.pbi jam_detection_api.pbi jam_detector.pbi joiner.pbi joiner_api.pbi joiner_router.pbi key_manager.pbi link_api.pbi link_quality.pbi link_raw.pbi link_raw_api.pbi logging.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part6.pbi : link logging_api.pbi lowpan.pbi mac.pbi mac_filter.pbi mac_frame.pbi mac_types.pbi mbedtls.pbi mesh_forwarder.pbi mesh_forwarder_ftd.pbi mesh_forwarder_mtd.pbi meshcop.pbi meshcop_leader.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part7.pbi : link meshcop_tlvs.pbi message.pbi message_api.pbi mle.pbi mle_router.pbi mle_types.pbi netdata_api.pbi netdiag_api.pbi netif.pbi network_data.pbi network_data_leader.pbi network_data_leader_ftd.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part8.pbi : link network_data_local.pbi network_diagnostic.pbi network_time_api.pbi notifier.pbi otns.pbi panid_query_client.pbi panid_query_server.pbi parse_cmdline.pbi pbkdf2_cmac.pbi radio.pbi radio_callbacks.pbi radio_platform.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part9.pbi : link random_crypto_api.pbi random_manager.pbi random_noncrypto_api.pbi router_table.pbi server_api.pbi settings.pbi sha256.pbi slaac_address.pbi sntp_api.pbi sntp_client.pbi src_match_controller.pbi string.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part10.pbi : link sub_mac.pbi sub_mac_callbacks.pbi tasklet.pbi tasklet_api.pbi thread_api.pbi thread_ftd_api.pbi thread_netif.pbi time_sync_service.pbi timer.pbi timestamp.pbi tlvs.pbi topology.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840_part11.pbi : link trickle_timer.pbi udp6.pbi udp_api.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840.pbd : link ot_nrf52840_libopenthread_mtd_nrf52840_part0.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part1.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part2.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part3.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part4.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part5.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part6.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part7.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part8.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part9.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part10.pbi ot_nrf52840_libopenthread_mtd_nrf52840_part11.pbi
+build ot_nrf52840_libopenthread_mtd_nrf52840.pbw : browsedata ot_nrf52840_libopenthread_mtd_nrf52840.pbd
+
+

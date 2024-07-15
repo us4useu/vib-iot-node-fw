@@ -1,0 +1,70 @@
+radio_platform.pbi: \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\openthread\src\core\radio\radio_platform.cpp \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\include\openthread/instance.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdlib.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Full.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ysizet.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product_stdlib.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\include\openthread/error.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\include\openthread/platform/toolchain.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdbool.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\intrinsics.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\iccarm_builtin.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\iar_intrinsics_common.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stddef.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\include\openthread/platform/logging.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdarg.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\include\openthread/platform/time.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\common/code_utils.hpp \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\common/arg_macros.hpp \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\common/instance.hpp \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\openthread-core-config.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\include\openthread/config.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\openthread-config-generic.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/openthread-core-default-config.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\config/coap.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\config/srp_server.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/announce_sender.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/backbone_router.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/border_router.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/channel_manager.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/channel_monitor.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/child_supervision.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/coap.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/commissioner.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/dataset_updater.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/dhcp6_client.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/dhcp6_server.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/diag.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/dns_client.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\config/srp_client.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/dnssd_server.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/dtls.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\config/border_router.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\config/commissioner.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\config/joiner.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/history_tracker.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/ip6.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/joiner.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/link_quality.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/link_raw.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/logging.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/mac.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core\config/time_sync.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/mle.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/netdata_publisher.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/parent_search.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/ping_sender.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/platform.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/radio_link.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/sntp_client.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/srp_client.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/srp_server.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/time_sync.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/tmf.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\src\core/config/openthread-core-config-check.h

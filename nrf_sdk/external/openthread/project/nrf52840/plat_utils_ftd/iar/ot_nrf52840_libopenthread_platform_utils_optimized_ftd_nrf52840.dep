@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>952122492</fileChecksum>
+    <configuration>
+        <name>libopenthread_platform_utils_optimized_ftd_nrf52840</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\debug_uart.c</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\soft_source_match_table.c</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\logging_rtt.c</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\settings_ram.c</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\mac_frame.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\include\openthread\platform\radio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\include\openthread\error.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\include\openthread\platform\toolchain.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\mac_frame.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\include\openthread\config.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\src\core\openthread-core-config.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\settings.h</file>
+            <file>$PROJ_DIR$\..\..\openthread-config-generic.h</file>
+            <file>$PROJ_DIR$\_build\soft_source_match_table.o</file>
+            <file>$PROJ_DIR$\_build\logging_rtt.o</file>
+            <file>$PROJ_DIR$\_build\settings_ram.o</file>
+            <file>$PROJ_DIR$\_build\mac_frame.o</file>
+            <file>$PROJ_DIR$\_build\ot_nrf52840_libopenthread_platform_utils_optimized_ftd_nrf52840.a</file>
+            <file>$PROJ_DIR$\_build\debug_uart.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\src\core\mac\mac_frame.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\include\openthread\instance.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\include\openthread\platform\logging.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\soft_source_match_table.h</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\debug_uart.c</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17 16 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\soft_source_match_table.c</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 38 17 16 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\logging_rtt.c</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17 16 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\settings_ram.c</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18 17 16 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\openthread\examples\platforms\utils\mac_frame.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15 5 6 11 10 7 8 9 12 14 13 26 35 31 32 27 33 29 37 34 36 30 28 17 16 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>IARCHIVE</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

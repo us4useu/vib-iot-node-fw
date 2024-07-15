@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>1173975559</fileChecksum>
+    <configuration>
+        <name>libopenthread_cli_ftd_nrf52833</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_coap.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_coap.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_coap_secure.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_commissioner.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_console.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_dataset.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_joiner.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_server.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_uart.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_udp.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_dataset.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_commissioner.hpp</file>
+            <file>$PROJ_DIR$\_build\cli.o</file>
+            <file>$PROJ_DIR$\_build\cli_coap.o</file>
+            <file>$PROJ_DIR$\_build\cli_coap_secure.o</file>
+            <file>$PROJ_DIR$\_build\cli_dataset.o</file>
+            <file>$PROJ_DIR$\_build\cli_server.o</file>
+            <file>$PROJ_DIR$\_build\ot_nrf52833_libopenthread_cli_ftd_nrf52833.a</file>
+            <file>$PROJ_DIR$\_build\cli_udp.o</file>
+            <file>$PROJ_DIR$\_build\cli_joiner.o</file>
+            <file>$PROJ_DIR$\_build\cli_console.o</file>
+            <file>$PROJ_DIR$\_build\cli_commissioner.o</file>
+            <file>$PROJ_DIR$\_build\cli_uart.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_joiner.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\openthread-core-config.h</file>
+            <file>$PROJ_DIR$\..\..\..\openthread-config-generic.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_coap_secure.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\config.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_udp.hpp</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 25 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_coap.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0 25 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_coap_secure.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27 25 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_commissioner.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 25 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_dataset.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11 25 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_joiner.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 24 25 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_udp.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30 25 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>IARCHIVE</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

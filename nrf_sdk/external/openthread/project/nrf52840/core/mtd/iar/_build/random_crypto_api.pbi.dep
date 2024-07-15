@@ -1,0 +1,12 @@
+random_crypto_api.pbi: \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\openthread\src\core\api\random_crypto_api.cpp \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\include\openthread/random_crypto.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Full.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\include\openthread/error.h \
+  C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\..\..\..\..\openthread\include\openthread/platform/toolchain.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdbool.h

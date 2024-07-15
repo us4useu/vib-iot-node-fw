@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>2352452358</fileChecksum>
+    <configuration>
+        <name>libopenthread_nrf52840_softdevice_sdk</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\temp.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\flash_sd.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\fem.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\alarm.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\softdevice.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\radio.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\entropy.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\logging.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\flash.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\diag.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\misc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\examples\platforms\nrf528xx\src\system.c</file>
+            <file>$PROJ_DIR$\_build\logging.o</file>
+            <file>$PROJ_DIR$\_build\radio.o</file>
+            <file>$PROJ_DIR$\_build\softdevice.o</file>
+            <file>$PROJ_DIR$\_build\diag.o</file>
+            <file>$PROJ_DIR$\_build\fem.o</file>
+            <file>$PROJ_DIR$\_build\flash_sd.o</file>
+            <file>$PROJ_DIR$\_build\alarm.o</file>
+            <file>$PROJ_DIR$\_build\flash.o</file>
+            <file>$PROJ_DIR$\_build\misc.o</file>
+            <file>$PROJ_DIR$\_build\system.o</file>
+            <file>$PROJ_DIR$\_build\entropy.o</file>
+            <file>$PROJ_DIR$\_build\ot_nrf52840_libopenthread_nrf52840_softdevice_sdk.a</file>
+            <file>$PROJ_DIR$\_build\temp.o</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>IARCHIVE</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

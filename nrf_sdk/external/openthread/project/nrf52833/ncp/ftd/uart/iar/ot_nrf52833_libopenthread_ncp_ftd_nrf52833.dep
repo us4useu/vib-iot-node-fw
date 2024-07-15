@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>2634092654</fileChecksum>
+    <configuration>
+        <name>libopenthread_ncp_ftd_nrf52833</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\changed_props_set.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_uart.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base_ftd.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base_mtd.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base_dispatcher.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_spi.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\changed_props_set.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base_radio.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_spi.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\include\openthread\config.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\openthread\src\core\openthread-core-config.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread-config-generic.h</file>
+            <file>$PROJ_DIR$\_build\ncp_spi.o</file>
+            <file>$PROJ_DIR$\_build\ncp_base_dispatcher.o</file>
+            <file>$PROJ_DIR$\_build\changed_props_set.o</file>
+            <file>$PROJ_DIR$\_build\ncp_base.o</file>
+            <file>$PROJ_DIR$\_build\ncp_base_radio.o</file>
+            <file>$PROJ_DIR$\_build\ncp_uart.o</file>
+            <file>$PROJ_DIR$\_build\ncp_base_mtd.o</file>
+            <file>$PROJ_DIR$\_build\ncp_base_ftd.o</file>
+            <file>$PROJ_DIR$\_build\ot_nrf52833_libopenthread_ncp_ftd_nrf52833.a</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base_ftd.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10 12 11 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base_mtd.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 11 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base_dispatcher.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10 12 11 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_spi.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9 12 11 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10 12 11 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\changed_props_set.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0 12 11 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\openthread\src\ncp\ncp_base_radio.cpp</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10 12 11 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>IARCHIVE</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

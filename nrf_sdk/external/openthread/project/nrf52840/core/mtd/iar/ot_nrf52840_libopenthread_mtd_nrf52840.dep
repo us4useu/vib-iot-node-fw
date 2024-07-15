@@ -1,0 +1,2606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>461944416</fileChecksum>
+    <configuration>
+        <name>libopenthread_mtd_nrf52840</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_udp.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\coap\coap_message.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\announce_begin_server.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\commissioner_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\announce_sender.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\address_resolver.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\aes_ccm.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\child_supervision_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\child_table.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\channel_monitor_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\coap\coap.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\coap\coap_secure.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\commissioner.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\channel_mask.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\backbone_router_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\border_agent.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\channel_manager_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\crc16.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\border_router_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\channel_monitor.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\announce_begin_client.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\coap_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\aes_ecb.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\coap_secure_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\child_supervision.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\channel_manager.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\backbone_router_ftd_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\lowpan.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mesh_forwarder_ftd.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\meshcop_tlvs.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\message.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\message_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\link_quality.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\joiner.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\backbone_router\local.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac_filter.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac_frame.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\link_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mesh_forwarder.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_mpl.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\link_raw.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\key_manager.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\joiner_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\joiner_router.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\backbone_router\leader.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\link_raw_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\logging.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\ip6_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\mbedtls.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\jam_detector.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mesh_forwarder_mtd.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\meshcop.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_filter.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac_types.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\meshcop_leader.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\logging_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\jam_detection_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_headers.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\icmp6.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\indirect_sender.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset_manager_ftd.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\instance_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\ecdsa.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_address.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\dataset_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\dns_client.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\crypto_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\energy_scan_client.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\dhcp6_client.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\diags_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\icmp6_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\instance.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\entropy_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\flash.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\data_poll_handler.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\dataset_ftd_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset_manager.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\data_poll_sender.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\dns_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dtls.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\energy_scan_server.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset_local.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\dhcp6_server.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\diags\factory_diags.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\heap.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\heap_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\hmac_sha256.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\netif.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data_local.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\netdiag_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data_leader_ftd.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\pbkdf2_cmac.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_diagnostic.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\network_time_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\radio\radio.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\random_crypto_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\random_noncrypto_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\router_table.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\server_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\settings.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\sha256.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\slaac_address.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mle.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\radio\radio_callbacks.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\radio\radio_platform.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\sntp_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\sntp_client.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\src_match_controller.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mle_router.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mle_types.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data_leader.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\panid_query_client.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\parse_cmdline.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\otns.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\notifier.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\netdata_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\panid_query_server.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\random_manager.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\thread_netif.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\sub_mac.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\tlvs.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\thread_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\topology.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\trickle_timer.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\timer.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\udp6.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\tasklet_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\timestamp.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\udp_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\string.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\thread_ftd_api.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\sub_mac_callbacks.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\tasklet.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\time_sync_service.cpp</file>
+            <file>$PROJ_DIR$\_build\coap_message.o</file>
+            <file>$PROJ_DIR$\_build\coap_secure_api.o</file>
+            <file>$PROJ_DIR$\_build\dhcp6_server.o</file>
+            <file>$PROJ_DIR$\_build\child_supervision.o</file>
+            <file>$PROJ_DIR$\_build\dtls.o</file>
+            <file>$PROJ_DIR$\_build\ecdsa.o</file>
+            <file>$PROJ_DIR$\_build\channel_monitor_api.o</file>
+            <file>$PROJ_DIR$\_build\dataset_local.o</file>
+            <file>$PROJ_DIR$\_build\energy_scan_server.o</file>
+            <file>$PROJ_DIR$\_build\data_poll_sender.o</file>
+            <file>$PROJ_DIR$\_build\coap.o</file>
+            <file>$PROJ_DIR$\_build\dataset.o</file>
+            <file>$PROJ_DIR$\_build\channel_monitor.o</file>
+            <file>$PROJ_DIR$\_build\child_supervision_api.o</file>
+            <file>$PROJ_DIR$\_build\coap_secure.o</file>
+            <file>$PROJ_DIR$\_build\dataset_manager.o</file>
+            <file>$PROJ_DIR$\_build\dataset_manager_ftd.o</file>
+            <file>$PROJ_DIR$\_build\diags_api.o</file>
+            <file>$PROJ_DIR$\_build\coap_api.o</file>
+            <file>$PROJ_DIR$\_build\commissioner.o</file>
+            <file>$PROJ_DIR$\_build\dataset_ftd_api.o</file>
+            <file>$PROJ_DIR$\_build\dns_client.o</file>
+            <file>$PROJ_DIR$\_build\dataset_api.o</file>
+            <file>$PROJ_DIR$\_build\data_poll_handler.o</file>
+            <file>$PROJ_DIR$\_build\dns_api.o</file>
+            <file>$PROJ_DIR$\_build\energy_scan_client.o</file>
+            <file>$PROJ_DIR$\_build\entropy_api.o</file>
+            <file>$PROJ_DIR$\_build\crypto_api.o</file>
+            <file>$PROJ_DIR$\_build\commissioner_api.o</file>
+            <file>$PROJ_DIR$\_build\crc16.o</file>
+            <file>$PROJ_DIR$\_build\child_table.o</file>
+            <file>$PROJ_DIR$\_build\dhcp6_client.o</file>
+            <file>$PROJ_DIR$\_build\factory_diags.o</file>
+            <file>$PROJ_DIR$\_build\heap.o</file>
+            <file>$PROJ_DIR$\_build\icmp6_api.o</file>
+            <file>$PROJ_DIR$\_build\ip6_api.o</file>
+            <file>$PROJ_DIR$\_build\ip6_mpl.o</file>
+            <file>$PROJ_DIR$\_build\ip6_headers.o</file>
+            <file>$PROJ_DIR$\_build\joiner.o</file>
+            <file>$PROJ_DIR$\_build\joiner_router.o</file>
+            <file>$PROJ_DIR$\_build\leader.o</file>
+            <file>$PROJ_DIR$\_build\instance.o</file>
+            <file>$PROJ_DIR$\_build\heap_api.o</file>
+            <file>$PROJ_DIR$\_build\jam_detector.o</file>
+            <file>$PROJ_DIR$\_build\link_api.o</file>
+            <file>$PROJ_DIR$\_build\flash.o</file>
+            <file>$PROJ_DIR$\_build\icmp6.o</file>
+            <file>$PROJ_DIR$\_build\jam_detection_api.o</file>
+            <file>$PROJ_DIR$\_build\joiner_api.o</file>
+            <file>$PROJ_DIR$\_build\link_raw.o</file>
+            <file>$PROJ_DIR$\_build\link_raw_api.o</file>
+            <file>$PROJ_DIR$\_build\local.o</file>
+            <file>$PROJ_DIR$\_build\logging.o</file>
+            <file>$PROJ_DIR$\_build\ip6_filter.o</file>
+            <file>$PROJ_DIR$\_build\logging_api.o</file>
+            <file>$PROJ_DIR$\_build\lowpan.o</file>
+            <file>$PROJ_DIR$\_build\instance_api.o</file>
+            <file>$PROJ_DIR$\_build\key_manager.o</file>
+            <file>$PROJ_DIR$\_build\ip6.o</file>
+            <file>$PROJ_DIR$\_build\link_quality.o</file>
+            <file>$PROJ_DIR$\_build\mac.o</file>
+            <file>$PROJ_DIR$\_build\indirect_sender.o</file>
+            <file>$PROJ_DIR$\_build\hmac_sha256.o</file>
+            <file>$PROJ_DIR$\_build\ip6_address.o</file>
+            <file>$PROJ_DIR$\_build\otns.o</file>
+            <file>$PROJ_DIR$\_build\mle_router.o</file>
+            <file>$PROJ_DIR$\_build\message_api.o</file>
+            <file>$PROJ_DIR$\_build\panid_query_server.o</file>
+            <file>$PROJ_DIR$\_build\meshcop_tlvs.o</file>
+            <file>$PROJ_DIR$\_build\parse_cmdline.o</file>
+            <file>$PROJ_DIR$\_build\notifier.o</file>
+            <file>$PROJ_DIR$\_build\mle_types.o</file>
+            <file>$PROJ_DIR$\_build\radio.o</file>
+            <file>$PROJ_DIR$\_build\mac_types.o</file>
+            <file>$PROJ_DIR$\_build\network_data_leader.o</file>
+            <file>$PROJ_DIR$\_build\radio_callbacks.o</file>
+            <file>$PROJ_DIR$\_build\mac_frame.o</file>
+            <file>$PROJ_DIR$\_build\pbkdf2_cmac.o</file>
+            <file>$PROJ_DIR$\_build\meshcop_leader.o</file>
+            <file>$PROJ_DIR$\_build\mesh_forwarder_ftd.o</file>
+            <file>$PROJ_DIR$\_build\mesh_forwarder_mtd.o</file>
+            <file>$PROJ_DIR$\_build\meshcop.o</file>
+            <file>$PROJ_DIR$\_build\mac_filter.o</file>
+            <file>$PROJ_DIR$\_build\netif.o</file>
+            <file>$PROJ_DIR$\_build\panid_query_client.o</file>
+            <file>$PROJ_DIR$\_build\netdiag_api.o</file>
+            <file>$PROJ_DIR$\_build\network_data.o</file>
+            <file>$PROJ_DIR$\_build\network_diagnostic.o</file>
+            <file>$PROJ_DIR$\_build\netdata_api.o</file>
+            <file>$PROJ_DIR$\_build\message.o</file>
+            <file>$PROJ_DIR$\_build\network_data_leader_ftd.o</file>
+            <file>$PROJ_DIR$\_build\mle.o</file>
+            <file>$PROJ_DIR$\_build\network_time_api.o</file>
+            <file>$PROJ_DIR$\_build\network_data_local.o</file>
+            <file>$PROJ_DIR$\_build\mbedtls.o</file>
+            <file>$PROJ_DIR$\_build\mesh_forwarder.o</file>
+            <file>$PROJ_DIR$\_build\channel_manager_api.o</file>
+            <file>$PROJ_DIR$\_build\announce_begin_server.o</file>
+            <file>$PROJ_DIR$\_build\aes_ccm.o</file>
+            <file>$PROJ_DIR$\_build\backbone_router_api.o</file>
+            <file>$PROJ_DIR$\_build\border_agent.o</file>
+            <file>$PROJ_DIR$\_build\border_router_api.o</file>
+            <file>$PROJ_DIR$\_build\channel_mask.o</file>
+            <file>$PROJ_DIR$\_build\announce_sender.o</file>
+            <file>$PROJ_DIR$\_build\address_resolver.o</file>
+            <file>$PROJ_DIR$\_build\backbone_router_ftd_api.o</file>
+            <file>$PROJ_DIR$\_build\announce_begin_client.o</file>
+            <file>$PROJ_DIR$\_build\aes_ecb.o</file>
+            <file>$PROJ_DIR$\_build\channel_manager.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\cli\cli_udp.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\ecdsa.hpp</file>
+            <file>$PROJ_DIR$\_build\tlvs.xcl</file>
+            <file>$PROJ_DIR$\_build\udp_api.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\data_poll_sender.hpp</file>
+            <file>$PROJ_DIR$\_build\ot_nrf52840_libopenthread_mtd_nrf52840.pbd</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\coap\coap_secure.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\otns.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\flash.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\tasklet.hpp</file>
+            <file>$PROJ_DIR$\_build\trickle_timer.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\announce_begin_client.hpp</file>
+            <file>$PROJ_DIR$\_build\ot_nrf52840_libopenthread_mtd_nrf52840.a</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\router_table.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\timer.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_filter.hpp</file>
+            <file>$PROJ_DIR$\_build\udp6.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\indirect_sender.hpp</file>
+            <file>$PROJ_DIR$\_build\timestamp.xcl</file>
+            <file>$PROJ_DIR$\_build\topology.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac_filter.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mle.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\sntp_client.hpp</file>
+            <file>$PROJ_DIR$\_build\time_sync_service.o</file>
+            <file>$PROJ_DIR$\_build\thread_ftd_api.o</file>
+            <file>$PROJ_DIR$\_build\sntp_api.o</file>
+            <file>$PROJ_DIR$\_build\thread_netif.o</file>
+            <file>$PROJ_DIR$\_build\tasklet.o</file>
+            <file>$PROJ_DIR$\_build\timer.o</file>
+            <file>$PROJ_DIR$\_build\timestamp.o</file>
+            <file>$PROJ_DIR$\_build\string.o</file>
+            <file>$PROJ_DIR$\_build\radio_platform.o</file>
+            <file>$PROJ_DIR$\_build\random_crypto_api.o</file>
+            <file>$PROJ_DIR$\_build\random_manager.o</file>
+            <file>$PROJ_DIR$\_build\src_match_controller.o</file>
+            <file>$PROJ_DIR$\_build\sub_mac.o</file>
+            <file>$PROJ_DIR$\_build\sub_mac_callbacks.o</file>
+            <file>$PROJ_DIR$\_build\thread_api.o</file>
+            <file>$PROJ_DIR$\_build\trickle_timer.o</file>
+            <file>$PROJ_DIR$\_build\address_resolver.xcl</file>
+            <file>$PROJ_DIR$\_build\tasklet_api.o</file>
+            <file>$PROJ_DIR$\_build\aes_ccm.xcl</file>
+            <file>$PROJ_DIR$\_build\topology.o</file>
+            <file>$PROJ_DIR$\_build\announce_begin_client.xcl</file>
+            <file>$PROJ_DIR$\_build\server_api.o</file>
+            <file>$PROJ_DIR$\_build\udp6.o</file>
+            <file>$PROJ_DIR$\_build\udp_api.o</file>
+            <file>$PROJ_DIR$\_build\aes_ecb.xcl</file>
+            <file>$PROJ_DIR$\_build\slaac_address.o</file>
+            <file>$PROJ_DIR$\_build\tlvs.o</file>
+            <file>$PROJ_DIR$\_build\router_table.o</file>
+            <file>$PROJ_DIR$\_build\random_noncrypto_api.o</file>
+            <file>$PROJ_DIR$\_build\sha256.o</file>
+            <file>$PROJ_DIR$\_build\settings.o</file>
+            <file>$PROJ_DIR$\_build\sntp_client.o</file>
+            <file>$PROJ_DIR$\_build\child_supervision.xcl</file>
+            <file>$PROJ_DIR$\_build\dataset_manager_ftd.xcl</file>
+            <file>$PROJ_DIR$\_build\dhcp6_client.xcl</file>
+            <file>$PROJ_DIR$\_build\backbone_router_api.xcl</file>
+            <file>$PROJ_DIR$\_build\border_agent.xcl</file>
+            <file>$PROJ_DIR$\_build\channel_manager_api.xcl</file>
+            <file>$PROJ_DIR$\_build\child_table.xcl</file>
+            <file>$PROJ_DIR$\_build\channel_monitor.xcl</file>
+            <file>$PROJ_DIR$\_build\coap_api.xcl</file>
+            <file>$PROJ_DIR$\_build\announce_sender.xcl</file>
+            <file>$PROJ_DIR$\_build\commissioner.xcl</file>
+            <file>$PROJ_DIR$\_build\crypto_api.xcl</file>
+            <file>$PROJ_DIR$\_build\channel_mask.xcl</file>
+            <file>$PROJ_DIR$\_build\border_router_api.xcl</file>
+            <file>$PROJ_DIR$\_build\child_supervision_api.xcl</file>
+            <file>$PROJ_DIR$\_build\coap_secure.xcl</file>
+            <file>$PROJ_DIR$\_build\coap_secure_api.xcl</file>
+            <file>$PROJ_DIR$\_build\dataset.xcl</file>
+            <file>$PROJ_DIR$\_build\dataset_ftd_api.xcl</file>
+            <file>$PROJ_DIR$\_build\data_poll_sender.xcl</file>
+            <file>$PROJ_DIR$\_build\backbone_router_ftd_api.xcl</file>
+            <file>$PROJ_DIR$\_build\commissioner_api.xcl</file>
+            <file>$PROJ_DIR$\_build\channel_manager.xcl</file>
+            <file>$PROJ_DIR$\_build\coap_message.xcl</file>
+            <file>$PROJ_DIR$\_build\data_poll_handler.xcl</file>
+            <file>$PROJ_DIR$\_build\announce_begin_server.xcl</file>
+            <file>$PROJ_DIR$\_build\channel_monitor_api.xcl</file>
+            <file>$PROJ_DIR$\_build\dataset_manager.xcl</file>
+            <file>$PROJ_DIR$\_build\coap.xcl</file>
+            <file>$PROJ_DIR$\_build\dataset_api.xcl</file>
+            <file>$PROJ_DIR$\_build\crc16.xcl</file>
+            <file>$PROJ_DIR$\_build\dataset_local.xcl</file>
+            <file>$PROJ_DIR$\_build\instance_api.xcl</file>
+            <file>$PROJ_DIR$\_build\dhcp6_server.xcl</file>
+            <file>$PROJ_DIR$\_build\indirect_sender.xcl</file>
+            <file>$PROJ_DIR$\_build\ip6.xcl</file>
+            <file>$PROJ_DIR$\_build\ip6_headers.xcl</file>
+            <file>$PROJ_DIR$\_build\ip6_mpl.xcl</file>
+            <file>$PROJ_DIR$\_build\ecdsa.xcl</file>
+            <file>$PROJ_DIR$\_build\energy_scan_client.xcl</file>
+            <file>$PROJ_DIR$\_build\icmp6_api.xcl</file>
+            <file>$PROJ_DIR$\_build\ip6_address.xcl</file>
+            <file>$PROJ_DIR$\_build\joiner.xcl</file>
+            <file>$PROJ_DIR$\_build\dns_client.xcl</file>
+            <file>$PROJ_DIR$\_build\factory_diags.xcl</file>
+            <file>$PROJ_DIR$\_build\heap.xcl</file>
+            <file>$PROJ_DIR$\_build\instance.xcl</file>
+            <file>$PROJ_DIR$\_build\jam_detection_api.xcl</file>
+            <file>$PROJ_DIR$\_build\joiner_api.xcl</file>
+            <file>$PROJ_DIR$\_build\flash.xcl</file>
+            <file>$PROJ_DIR$\_build\diags_api.xcl</file>
+            <file>$PROJ_DIR$\_build\ip6_api.xcl</file>
+            <file>$PROJ_DIR$\_build\heap_api.xcl</file>
+            <file>$PROJ_DIR$\_build\jam_detector.xcl</file>
+            <file>$PROJ_DIR$\_build\key_manager.xcl</file>
+            <file>$PROJ_DIR$\_build\hmac_sha256.xcl</file>
+            <file>$PROJ_DIR$\_build\dtls.xcl</file>
+            <file>$PROJ_DIR$\_build\dns_api.xcl</file>
+            <file>$PROJ_DIR$\_build\joiner_router.xcl</file>
+            <file>$PROJ_DIR$\_build\leader.xcl</file>
+            <file>$PROJ_DIR$\_build\entropy_api.xcl</file>
+            <file>$PROJ_DIR$\_build\ip6_filter.xcl</file>
+            <file>$PROJ_DIR$\_build\energy_scan_server.xcl</file>
+            <file>$PROJ_DIR$\_build\icmp6.xcl</file>
+            <file>$PROJ_DIR$\_build\network_data_local.xcl</file>
+            <file>$PROJ_DIR$\_build\meshcop_leader.xcl</file>
+            <file>$PROJ_DIR$\_build\network_data.xcl</file>
+            <file>$PROJ_DIR$\_build\meshcop.xcl</file>
+            <file>$PROJ_DIR$\_build\mesh_forwarder_mtd.xcl</file>
+            <file>$PROJ_DIR$\_build\link_quality.xcl</file>
+            <file>$PROJ_DIR$\_build\lowpan.xcl</file>
+            <file>$PROJ_DIR$\_build\mesh_forwarder.xcl</file>
+            <file>$PROJ_DIR$\_build\message.xcl</file>
+            <file>$PROJ_DIR$\_build\logging_api.xcl</file>
+            <file>$PROJ_DIR$\_build\mac_types.xcl</file>
+            <file>$PROJ_DIR$\_build\netdata_api.xcl</file>
+            <file>$PROJ_DIR$\_build\local.xcl</file>
+            <file>$PROJ_DIR$\_build\mle_router.xcl</file>
+            <file>$PROJ_DIR$\_build\mle.xcl</file>
+            <file>$PROJ_DIR$\_build\netdiag_api.xcl</file>
+            <file>$PROJ_DIR$\_build\meshcop_tlvs.xcl</file>
+            <file>$PROJ_DIR$\_build\netif.xcl</file>
+            <file>$PROJ_DIR$\_build\link_raw.xcl</file>
+            <file>$PROJ_DIR$\_build\link_raw_api.xcl</file>
+            <file>$PROJ_DIR$\_build\mbedtls.xcl</file>
+            <file>$PROJ_DIR$\_build\network_data_leader.xcl</file>
+            <file>$PROJ_DIR$\_build\mac.xcl</file>
+            <file>$PROJ_DIR$\_build\mesh_forwarder_ftd.xcl</file>
+            <file>$PROJ_DIR$\_build\message_api.xcl</file>
+            <file>$PROJ_DIR$\_build\link_api.xcl</file>
+            <file>$PROJ_DIR$\_build\network_data_leader_ftd.xcl</file>
+            <file>$PROJ_DIR$\_build\mac_frame.xcl</file>
+            <file>$PROJ_DIR$\_build\network_diagnostic.xcl</file>
+            <file>$PROJ_DIR$\_build\mac_filter.xcl</file>
+            <file>$PROJ_DIR$\_build\logging.xcl</file>
+            <file>$PROJ_DIR$\_build\mle_types.xcl</file>
+            <file>$PROJ_DIR$\_build\thread_ftd_api.xcl</file>
+            <file>$PROJ_DIR$\_build\network_time_api.xcl</file>
+            <file>$PROJ_DIR$\_build\panid_query_server.xcl</file>
+            <file>$PROJ_DIR$\_build\pbkdf2_cmac.xcl</file>
+            <file>$PROJ_DIR$\_build\radio_callbacks.xcl</file>
+            <file>$PROJ_DIR$\_build\sntp_api.xcl</file>
+            <file>$PROJ_DIR$\_build\random_manager.xcl</file>
+            <file>$PROJ_DIR$\_build\src_match_controller.xcl</file>
+            <file>$PROJ_DIR$\_build\string.xcl</file>
+            <file>$PROJ_DIR$\_build\sub_mac_callbacks.xcl</file>
+            <file>$PROJ_DIR$\_build\tasklet_api.xcl</file>
+            <file>$PROJ_DIR$\_build\sntp_client.xcl</file>
+            <file>$PROJ_DIR$\_build\tasklet.xcl</file>
+            <file>$PROJ_DIR$\_build\time_sync_service.xcl</file>
+            <file>$PROJ_DIR$\_build\timer.xcl</file>
+            <file>$PROJ_DIR$\_build\notifier.xcl</file>
+            <file>$PROJ_DIR$\_build\parse_cmdline.xcl</file>
+            <file>$PROJ_DIR$\_build\otns.xcl</file>
+            <file>$PROJ_DIR$\_build\settings.xcl</file>
+            <file>$PROJ_DIR$\_build\sub_mac.xcl</file>
+            <file>$PROJ_DIR$\_build\thread_netif.xcl</file>
+            <file>$PROJ_DIR$\_build\random_crypto_api.xcl</file>
+            <file>$PROJ_DIR$\_build\radio.xcl</file>
+            <file>$PROJ_DIR$\_build\slaac_address.xcl</file>
+            <file>$PROJ_DIR$\_build\server_api.xcl</file>
+            <file>$PROJ_DIR$\_build\radio_platform.xcl</file>
+            <file>$PROJ_DIR$\_build\random_noncrypto_api.xcl</file>
+            <file>$PROJ_DIR$\_build\sha256.xcl</file>
+            <file>$PROJ_DIR$\_build\panid_query_client.xcl</file>
+            <file>$PROJ_DIR$\_build\router_table.xcl</file>
+            <file>$PROJ_DIR$\_build\thread_api.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\child_table.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset_local.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data_local.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\mbedtls.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\data_poll_handler.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\jam_detector.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\random_manager.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\energy_scan_server.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_address.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\aes_ecb.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\commissioner.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\hmac_sha256.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\meshcop_tlvs.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\pbkdf2_cmac.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\slaac_address.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\config.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data_leader.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\channel_monitor.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\aes_ccm.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac_frame.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\energy_scan_client.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_mpl.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\notifier.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\openthread-core-config.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\coap\coap.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\openthread-config-generic.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\dhcp6_server.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mle_router.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\meshcop.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\key_manager.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\lowpan.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\coap\coap_message.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\instance.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\message.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_diagnostic.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mesh_forwarder.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\announce_sender.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dtls.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\child_supervision.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset_manager.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_headers.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\joiner.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\link_quality.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\heap.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\channel_mask.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\netif.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\dhcp6_client.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\dns_client.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\announce_begin_server.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\diags\factory_diags.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\joiner_router.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\crc16.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\panid_query_server.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\sha256.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\random_crypto.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\sub_mac.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\thread_netif.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\border_agent.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac_types.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\topology.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\settings.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\channel_manager.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\entropy.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\meshcop_leader.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\logging.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mle_types.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\platform\time.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\icmp6.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\address_resolver.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\panid_query_client.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\random.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\random_noncrypto.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\timestamp.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\radio\radio.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\platform\toolchain.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\error.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\platform\logging.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\tlvs.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\numeric_limits.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\parse_cmdline.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\ip6.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\message.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\platform\radio.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\code_utils.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\arg_macros.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\include\openthread\instance.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\string.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\src_match_controller.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\udp6.hpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\trickle_timer.hpp</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 260</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\coap\coap_message.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 326</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 461 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\announce_begin_server.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 328</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 480 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\commissioner_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 324</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\announce_sender.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 312</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 467 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\address_resolver.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 287</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 501 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\aes_ccm.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 289</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 448 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\child_supervision_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 317</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\child_table.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 309</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 430 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\channel_monitor_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 329</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\coap\coap.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 331</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 454 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\coap\coap_secure.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 318</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 253 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\commissioner.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 313</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 440 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\channel_mask.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 315</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 475 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\backbone_router_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 306</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\border_agent.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 307</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 489 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\channel_manager_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 308</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\crc16.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 333</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 483 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\border_router_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 316</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\channel_monitor.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 310</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 447 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\announce_begin_client.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 291</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 259 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\coap_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 311</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\aes_ecb.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 295</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 439 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\coap_secure_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 319</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\child_supervision.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 469 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\channel_manager.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 325</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 493 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\backbone_router_ftd_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 323</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\lowpan.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 373</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 460 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mesh_forwarder_ftd.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 390</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 466 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\meshcop_tlvs.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 383</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 442 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\message.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 375</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 464 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\message_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 391</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\link_quality.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 372</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 473 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\joiner.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 345</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 472 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\backbone_router\local.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 379</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac_filter.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 396</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 268 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac_frame.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 394</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 449 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\link_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 392</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mesh_forwarder.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 374</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 466 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_mpl.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 340</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 451 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\link_raw.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 385</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\key_manager.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 357</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 459 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\joiner_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 351</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\joiner_router.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 361</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 482 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\backbone_router\leader.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 362</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\link_raw_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 386</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\logging.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 397</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 496 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\ip6_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 354</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\mbedtls.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 387</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 433 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\jam_detector.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 356</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 435 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mesh_forwarder_mtd.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 371</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 466 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\meshcop.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 370</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 458 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_filter.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 364</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 263 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac_types.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 377</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 490 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\meshcop_leader.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 368</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 495 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\logging_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 376</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\mac.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 389</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 476 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\jam_detection_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 350</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_headers.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 339</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 471 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\icmp6.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 366</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 500 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\indirect_sender.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 337</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 265 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset_manager_ftd.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 304</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 470 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\instance_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 335</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 338</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 497 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\ecdsa.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 341</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 248 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\ip6_address.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 344</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 438 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\dataset_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 332</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\dns_client.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 346</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 479 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\crypto_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 314</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\energy_scan_client.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 342</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 450 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\dhcp6_client.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 305</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 478 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\diags_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 353</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\icmp6_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 343</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\instance.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 349</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 462 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 320</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 463 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\entropy_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 363</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 494</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\flash.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 352</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 255 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\data_poll_handler.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 327</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 434 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\dataset_ftd_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 321</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset_manager.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 330</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 470 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\data_poll_sender.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 322</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 251 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\dns_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 360</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dtls.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 359</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 468 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\energy_scan_server.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 365</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 437 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\dataset_local.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 334</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 431 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\dhcp6_server.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 336</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 456 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\diags\factory_diags.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 347</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 481 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\heap.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 348</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 474 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\heap_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 355</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\hmac_sha256.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 358</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 441 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\netif.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 384</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 477 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data_local.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 367</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 432 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\netdiag_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 382</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data_leader_ftd.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 393</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 446 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\pbkdf2_cmac.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 402</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 443 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_diagnostic.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 395</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 465 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\network_time_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 400</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\radio\radio.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 421</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 506 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\random_crypto_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 420</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 486 528 524 520 519 521 526</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\random_noncrypto_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 425</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 504 528 524 520 519 521 526 503 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\router_table.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 428</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 261 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\server_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 423</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\settings.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 417</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 492 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\crypto\sha256.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 426</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 485 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\slaac_address.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 422</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 444 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mle.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 381</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 269 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\radio\radio_callbacks.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 403</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 506 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\radio\radio_platform.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 424</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 534 511 524 520 519 521 526 507 536 512 508 513 522 525 509 510 514 530 528 499 532 533 462 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\sntp_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 404</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\sntp_client.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 410</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 270 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\src_match_controller.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 406</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 537 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mle_router.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 380</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 457 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\mle_types.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 398</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 498 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data_leader.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 388</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 446 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\panid_query_client.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 427</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 502 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\parse_cmdline.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 415</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 523 528 524 520 519 521 526 517 507 518 512 508 513 522 525 509 510 527 529 534 511 536 514 530 531 532 533 516 535 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\network_data.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 369</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 256 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\utils\otns.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 416</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 254 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\notifier.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 414</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 452 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\netdata_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 378</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\panid_query_server.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 401</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 484 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\random_manager.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 405</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 436 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\thread_netif.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 419</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 488 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\sub_mac.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 418</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 487 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\tlvs.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 249</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 515 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\thread_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 429</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\topology.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 267</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 491 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\trickle_timer.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 258</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 539 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\timer.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 413</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 262 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\net\udp6.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 264</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 538 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\tasklet_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 409</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\meshcop\timestamp.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 266</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 505 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\udp_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 250</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\string.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 407</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 535 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\api\thread_ftd_api.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 399</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\mac\sub_mac_callbacks.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 408</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 487 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\common\tasklet.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 411</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 257 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\openthread\src\core\thread\time_sync_service.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 412</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 453 445 455</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>IARCHIVE</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

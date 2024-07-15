@@ -1,0 +1,36 @@
+#Generating source browse information for project ot_nrf52833_libopenthread_rcp_nrf52833
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build changed_props_set.pbi : index changed_props_set.xcl
+build ncp_base.pbi : index ncp_base.xcl
+build ncp_base_dispatcher.pbi : index ncp_base_dispatcher.xcl
+build ncp_base_ftd.pbi : index ncp_base_ftd.xcl
+build ncp_base_mtd.pbi : index ncp_base_mtd.xcl
+build ncp_base_radio.pbi : index ncp_base_radio.xcl
+build ncp_spi.pbi : index ncp_spi.xcl
+build ot_nrf52833_libopenthread_rcp_nrf52833_part0.pbi : link changed_props_set.pbi ncp_base.pbi ncp_base_dispatcher.pbi
+build ot_nrf52833_libopenthread_rcp_nrf52833_part1.pbi : link ncp_base_ftd.pbi ncp_base_mtd.pbi ncp_base_radio.pbi
+build ot_nrf52833_libopenthread_rcp_nrf52833_part2.pbi : link ncp_spi.pbi
+build ot_nrf52833_libopenthread_rcp_nrf52833.pbd : link ot_nrf52833_libopenthread_rcp_nrf52833_part0.pbi ot_nrf52833_libopenthread_rcp_nrf52833_part1.pbi ot_nrf52833_libopenthread_rcp_nrf52833_part2.pbi
+build ot_nrf52833_libopenthread_rcp_nrf52833.pbw : browsedata ot_nrf52833_libopenthread_rcp_nrf52833.pbd
+
+

@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armjlink2.dll" 
+
+"C:\Users\Admin\Downloads\nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8\external\openthread\project\nrf52840\core\mtd\iar\_build\ot_nrf52840_libopenthread_mtd_nrf52840.out" 
+
+--plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\debugger\NordicSemi\nRF52_2.dmac" 
+
+
+
+
