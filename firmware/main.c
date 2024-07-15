@@ -107,7 +107,7 @@ union axis_data_t {
         q15_t y_axis[ACQ_BUF_SZ];
         q15_t z_axis[ACQ_BUF_SZ];
     } samples;
-    uint8_t acq_data_buf[ACQ_BUF_SZ*6];
+    uint8_t acq_data_buf[ACQ_BUF_SZ*6]; //48 kB
 } data;
 
 //axis_data_t data;
@@ -119,9 +119,8 @@ union axis_data_t {
 
 uint32_t nsamples = ACQ_BUF_SZ;
 
-static q15_t fft_input[FFT_IN_SZ];             //!< FFT input array. Time domain.
-//static q15_t fft_input2[FFT_IN_SZ];             //!< FFT input array. Time domain.
-static q15_t fft_output[FFT_OUT_SZ];             //!< FFT output data. Frequency domain.
+static q15_t fft_input[FFT_IN_SZ]; //4 kB
+static q15_t fft_output[FFT_OUT_SZ]; //8 kB
 
 //iis2 utils
 static const uint8_t  mems_TEMP_L         = 0x0B;
@@ -185,7 +184,7 @@ static const uint8_t  lis2hh_conf[6]    =   {0b01001111,   // HighRes disabled, 
 
 #define MAX_CMD_QSIZE   32
 uint8_t cmd_queue[MAX_CMD_QSIZE];
-otIp6Address cmd_respdst[MAX_CMD_QSIZE];
+otIp6Address cmd_respdst[MAX_CMD_QSIZE]; //0.5 kB
 volatile uint8_t cmd_wrptr = 0;
 volatile uint8_t cmd_procptr = 0;
 
@@ -722,46 +721,7 @@ void processCMD(uint8_t* buf, otIp6Address sourceaddr)
     else if(strncmp(buf, "GET_STRM", 8) == 0) {
         queueCMD2proc(CMD_ACQ_STREAM, sourceaddr);
     }
-    else {
-    }
-    /*else if(strstr(buf, "ACQ") != NULL) {
-        //process acq command
-        ptr = strchr(buf, '_');
-        cmd_ptr = ptr+1;
-        
-        if(strstr(cmd_ptr, "START")!=NULL) {
-            queueCMD2proc(CMD_ACQ_START, sourceaddr);
-        }
-        else if(strstr(cmd_ptr, "STOP")!= NULL) {
-            queueCMD2proc(CMD_ACQ_STOP, sourceaddr);
-        }
-        else if(strstr(cmd_ptr, "READ")!= NULL) {
-            queueCMD2proc(CMD_ACQ_READ, sourceaddr);
-            //read buf num
-        }
-        else if(strstr(cmd_ptr, "RNXT")!= NULL) {
-            queueCMD2proc(CMD_ACQ_RNXT, sourceaddr);
-            //read buf num
-        }
-        else if(strstr(cmd_ptr, "RREP")!= NULL) {
-            queueCMD2proc(CMD_ACQ_RREP, sourceaddr);
-            //read buf num
-        }
-        else if(strstr(cmd_ptr, "DONE")!= NULL) {
-            queueCMD2proc(CMD_ACQ_DONE, sourceaddr);
-        }
-        else if(strstr(cmd_ptr, "STREAM")!=NULL) {
-            queueCMD2proc(CMD_ACQ_STREAM, sourceaddr);
-        }
-    }
-    else if(strstr(buf, "GET") != NULL) {
-        //process get command
-        ptr = strchr(buf, '_');
-        cmd_ptr = ptr+1;
-        if(strstr(cmd_ptr, "DPTR")!= NULL) {
-            queueCMD2proc(CMD_GET_DPTR, sourceaddr);
-        }
-    }*/
+    else { }
 }
 
 void handleUdpCMD(uint8_t* buf, uint16_t len, otIp6Address sourceaddr)
@@ -800,9 +760,7 @@ void handleUdpRx(void *aContext, otMessage *aMessage, const otMessageInfo *aMess
       buf[length] = '\0';
 
       //NRF_LOG_INFO("Received %d byte UDP message", length);
-
       handleUdpCMD(buf, length, aMessageInfo->mPeerAddr);
-      
       //NRF_LOG_INFO("Received UDP message from IP: %s", otIp6Address);
 }
 
@@ -866,41 +824,25 @@ void set_config(int16_t* config)
         odr_hz = (float)odrLUT[odr];
         mems_set_odr(odr);
     }
-    else {
-        config[0] = odr;
-    }
+    else { config[0] = odr; }
     
     //verify/set RANGE
-    if(config[1] < 3){
-        rng = config[1];
-    }
-    else {
-        config[1] = rng;
-    }
+    if(config[1] < 3){ rng = config[1]; }
+    else { config[1] = rng; }
     
     //verify/set NSAMPLES
     if(config[2] == 512 || config[2] == 1024 || config[2] == 2048 || config[2] == 4096 || config[2] == 8192){
-        nsamples = config[2];;
+        nsamples = config[2];
     }
-    else {
-        config[2] = nsamples;
-    }
+    else { config[2] = nsamples; }
 
     //verify/set PWR STATE
-    if(config[3] < 3) {
-        pst = config[3];
-    }
-    else {
-        config[3] = pst;
-    }
+    if(config[3] < 3) { pst = config[3]; }
+    else { config[3] = pst; }
 
     //verify/set ACQ TYPE
-    if(config[4] < 3) {
-        acq_type = config[4];
-    }
-    else {
-        config[4] = acq_type;
-    }
+    if(config[4] < 3) { acq_type = config[4]; }
+    else { config[4] = acq_type; }
 }
 
 int main(int argc, char *argv[])
@@ -1029,8 +971,8 @@ int main(int argc, char *argv[])
                           sprintf(&strbuf[1], "%04d=", acq_data_ptr);
                           for(int i = 0; i<udp_sendsize; i++) { 
                               sprintf(&strbuf[(12*i)+6], "%04X%04X%04X",  (uint16_t)data.samples.x_axis[acq_data_ptr], 
-                                                                      (uint16_t)data.samples.y_axis[acq_data_ptr], 
-                                                                      (uint16_t)data.samples.z_axis[acq_data_ptr] );
+                                                                          (uint16_t)data.samples.y_axis[acq_data_ptr], 
+                                                                          (uint16_t)data.samples.z_axis[acq_data_ptr] );
                               acq_data_ptr++;
                           }
                           err = UdpTx(strbuf, cmd_respdst[cmd_procptr]);
