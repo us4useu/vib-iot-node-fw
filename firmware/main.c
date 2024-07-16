@@ -972,7 +972,7 @@ int main(int argc, char *argv[])
                           for(int i = 0; i<udp_sendsize; i++) { 
                               sprintf(&strbuf[(12*i)+6], "%04X%04X%04X",  (uint16_t)data.samples.x_axis[acq_data_ptr], 
                                                                           (uint16_t)data.samples.y_axis[acq_data_ptr], 
-                                                                          (uint16_t)data.samples.z_axis[acq_data_ptr] );
+                                                                          (uint16_t)data.samples.z_axis[acq_data_ptr]);
                               acq_data_ptr++;
                           }
                           err = UdpTx(strbuf, cmd_respdst[cmd_procptr]);
@@ -1041,7 +1041,6 @@ int main(int argc, char *argv[])
                       break;
                   case CMD_ACQ_RNXT:
                       nrf_drv_timer_disable(&TIMER_1S);
-
                       if(acq_data_ptr + UDP_DATABURST_NSAMPLES <= data_out_count) { 
                           udp_sendsize = UDP_DATABURST_NSAMPLES;
                       }
@@ -1053,6 +1052,9 @@ int main(int argc, char *argv[])
                           sprintf(&strbuf[12*i], "%04X%04X%04X",  (uint16_t)data.samples.x_axis[acq_data_ptr], 
                                                                   (uint16_t)data.samples.y_axis[acq_data_ptr], 
                                                                   (uint16_t)data.samples.z_axis[acq_data_ptr] );
+                          sprintf(&strbuf[(12*i)+6], "%04X%04X%04X",  (uint16_t)acq_data_ptr, 
+                                                                    (uint16_t)acq_data_ptr, 
+                                                                    (uint16_t)acq_data_ptr);
                           acq_data_ptr++;
                       }
                       err = UdpTx(strbuf, cmd_respdst[cmd_procptr]);
@@ -1221,12 +1223,9 @@ int main(int argc, char *argv[])
                     sprintf(&strbuf[0], "P");
                     sprintf(&strbuf[1], "%04d=", acq_data_ptr);
                     for(int i = 0; i<udp_sendsize; i++) { 
-                        /*sprintf(&strbuf[(12*i)+6], "%04X%04X%04X",  (uint16_t)data.samples.x_axis[acq_data_ptr], 
+                        sprintf(&strbuf[(12*i)+6], "%04X%04X%04X",  (uint16_t)data.samples.x_axis[acq_data_ptr], 
                                                                     (uint16_t)data.samples.y_axis[acq_data_ptr], 
-                                                                    (uint16_t)data.samples.z_axis[acq_data_ptr]);*/
-                        sprintf(&strbuf[(12*i)+6], "%04X%04X%04X",  (uint16_t)acq_data_ptr, 
-                                                                    (uint16_t)acq_data_ptr, 
-                                                                    (uint16_t)acq_data_ptr);
+                                                                    (uint16_t)data.samples.z_axis[acq_data_ptr]);
                         acq_data_ptr++;
                     }
                     err = UdpTx(strbuf, udpSrvAddr);;
