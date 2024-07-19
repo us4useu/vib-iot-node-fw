@@ -1018,7 +1018,11 @@ int main(int argc, char *argv[])
                       acq_data = false;
                       mems_stop_fifo();
                       mems_fifo_running = false;
-                      state = STATE_ACQSTOP;
+                      if(acq_type == ACQ_LOG) { 
+                          state = STATE_IDLE;
+                          nrf_drv_timer_enable(&TIMER_1S);
+                      }
+                      else { state = STATE_ACQSTOP; }
                       acq_data_ptr = 0;
                       sprintf(strbuf, "STAT=%d,%d,%d,%d,%d,%d,%d,%d", 
                                       temperature, battery, 0, data_out_count,
