@@ -787,7 +787,7 @@ otError UdpTx(uint8_t* buf, otIp6Address dstaddr)
         return error;
     }
 
-    //NRF_LOG_INFO("Massage append %s, len %d ", buf, (uint16_t)strlen(buf));
+    NRF_LOG_INFO("Massage append %s, len %d ", buf, (uint16_t)strlen(buf));
 
     //error = otMessageWrite(message, 0, buf, (uint16_t)strlen(buf));
     error = otMessageAppend(message, buf, (uint16_t)strlen(buf));
@@ -812,6 +812,7 @@ otError UdpTx(uint8_t* buf, otIp6Address dstaddr)
 #define ACQ_RAW     0
 #define ACQ_FFT     1
 #define ACQ_LOG     2
+#define ACQ_LOG5XZ  3
 
 uint16_t acq_type = 0;
 
@@ -843,6 +844,41 @@ void set_config(int16_t* config)
     //verify/set ACQ TYPE
     if(config[4] < 3) { acq_type = config[4]; }
     else { config[4] = acq_type; }
+}
+
+void convert_q15_to_float(const q15_t* q15_data, float32_t* float_data, uint32_t length) {
+    // Convert Q15 array to float
+    arm_q15_to_float(q15_data, float_data, length);
+}
+
+float calculate_frequency(q15_t *fftOutput, uint32_t fftSize, float samplingRate) {
+    q15_t maxValue;
+    uint32_t maxIndex;
+
+    // Find the index of the maximum magnitude
+    arm_max_q15(fftOutput, fftSize, &maxValue, &maxIndex);
+
+    q15_t left_mag = (maxValue > 0) ? fftOutput[maxIndex - 1] : 0;
+    q15_t peak_mag = fftOutput[maxIndex];
+    q15_t right_mag = (maxIndex < (fftSize - 1)) ? fftOutput[maxIndex + 1] : 0;
+
+    // Convert Q15 magnitudes to float
+    float32_t magnitudes[3];
+    q15_t q15_magnitudes[3] = {left_mag, peak_mag, right_mag};
+    arm_q15_to_float(q15_magnitudes, magnitudes, 3);
+
+    // Parabolic interpolation for frequency estimation
+    float left = magnitudes[0];
+    float peak = magnitudes[1];
+    float right = magnitudes[2];
+    float alpha = left - right;
+    float beta = 2.0f * peak - left - right;
+    float correction = 0.5f * alpha / beta;
+
+    // Calculate the interpolated frequency
+    float interpolatedBin = (float)maxIndex + correction;
+    return interpolatedBin * (samplingRate / ((float)fftSize * 2));
+
 }
 
 int main(int argc, char *argv[])
@@ -1108,8 +1144,8 @@ int main(int argc, char *argv[])
                     mems_fifo_running = false;
                 }
                 else {
-                    q15_t maxX, maxY, maxZ;
-                    float32_t freqX, freqY, freqZ;
+                    q15_t maxX[5], maxY[5], maxZ[5];
+                    float32_t freqX[5], freqY[5], freqZ[5];
               
                     uint32_t maxIndex;
                     arm_rfft_instance_q15 S;
@@ -1129,8 +1165,22 @@ int main(int argc, char *argv[])
                     }
 
                     fft_output[0] = 0;
-                    arm_max_q15(fft_output, fft_size, &maxX, &maxIndex);
-                    freqX = (odr_hz * maxIndex) / (2*fft_size);
+
+                    int32_t filter = fft_size >> 8;
+                    NRF_LOG_INFO("Filter = %d", filter);
+
+                    for(uint8_t idx = 0; idx < 5; ++idx) {
+                      arm_max_q15(fft_output, fft_size, &maxX[idx], &maxIndex);
+                      freqX[idx] = (odr_hz * maxIndex) / (2*fft_size);
+                      //freqX[idx] = calculate_frequency(fft_output, fft_size, odr_hz);
+                      
+                      fft_output[maxIndex] = 0;
+                      for(uint8_t k = 0; k < filter; ++k) {
+                        if(maxIndex > k) { fft_output[maxIndex-k] = 0; }
+                        if(maxIndex < fft_size-k) { fft_output[maxIndex+k] = 0;}
+                      }
+
+                    }
 
                    //Perform FFT on axis Y
                     arm_rfft_q15(&S, data.samples.y_axis, fft_output); //arm_rfft_q15(&S, fft_input, fft_output);
@@ -1140,9 +1190,12 @@ int main(int argc, char *argv[])
                         memcpy(data.samples.y_axis, fft_output, fft_size*sizeof(q15_t));
                     }
                     
-                    fft_output[0] = 0;
-                    arm_max_q15(fft_output, fft_size, &maxY, &maxIndex);
-                    freqY = (odr_hz * maxIndex) / (2*fft_size);
+                    /*fft_output[0] = 0;
+                    for(uint8_t idx = 0; idx < 5; ++idx) {
+                      arm_max_q15(fft_output, fft_size, &maxY[idx], &maxIndex);
+                      freqY[idx] = (odr_hz * maxIndex) / (2*fft_size);
+                      fft_output[maxIndex] = 0;
+                    }*/
               
                     //Perform FFT on axis Z
                     arm_rfft_q15(&S, data.samples.z_axis, fft_output); //arm_rfft_q15(&S, fft_input, fft_output);
@@ -1153,18 +1206,35 @@ int main(int argc, char *argv[])
                     }
                     
                     fft_output[0] = 0;
-                    arm_max_q15(fft_output, fft_size, &maxZ, &maxIndex);
-                    freqZ = (odr_hz * maxIndex) / (2*fft_size);
+                    for(uint8_t idx = 0; idx < 5; ++idx) {
+                      arm_max_q15(fft_output, fft_size, &maxZ[idx], &maxIndex);
+                      freqZ[idx] = (odr_hz * maxIndex) / (2*fft_size);
+                      //freqZ[idx] = calculate_frequency(fft_output, fft_size, odr_hz);
+                      
+                      fft_output[maxIndex] = 0;
+                      for(uint8_t k = 0; k < filter; ++k) {
+                        if(maxIndex > k) { fft_output[maxIndex-k] = 0; }
+                        if(maxIndex < fft_size-k) { fft_output[maxIndex+k] = 0;}
+                      }
 
-                    NRF_LOG_INFO("Fx = " NRF_LOG_FLOAT_MARKER ", Mx = %d", NRF_LOG_FLOAT(freqX), maxX);
-                    NRF_LOG_INFO("Fy = " NRF_LOG_FLOAT_MARKER ", My = %d", NRF_LOG_FLOAT(freqY), maxY);
-                    NRF_LOG_INFO("Fz = " NRF_LOG_FLOAT_MARKER ", Mz = %d", NRF_LOG_FLOAT(freqZ), maxZ);
+                    }
                     
                     if(acq_type == ACQ_LOG) {
                         if(addrSet) {
-                            sprintf(strbuf, "LOG=%d,%d,%d,%d,%d,%d",(int32_t)(freqX*100.0f),(int16_t)maxX,
-                                                                    (int32_t)(freqY*100.0f),(int16_t)maxY,
-                                                                    (int32_t)(freqZ*100.0f),(int16_t)maxZ);
+                            sprintf(strbuf, "LOG=%d,%d,%d,%d,%d,%d,%d,%d,%d,%d"
+                                               ",%d,%d,%d,%d,%d,%d,%d,%d,%d,%d"
+                                                ,  
+                                            (int32_t)(freqX[0]*100.0f),(int16_t)maxX[0],
+                                            (int32_t)(freqX[1]*100.0f),(int16_t)maxX[1],
+                                            (int32_t)(freqX[2]*100.0f),(int16_t)maxX[2],
+                                            (int32_t)(freqX[3]*100.0f),(int16_t)maxX[3],
+                                            (int32_t)(freqX[4]*100.0f),(int16_t)maxX[4],
+                                            (int32_t)(freqZ[0]*100.0f),(int16_t)maxZ[0],
+                                            (int32_t)(freqZ[1]*100.0f),(int16_t)maxZ[1],
+                                            (int32_t)(freqZ[2]*100.0f),(int16_t)maxZ[2],
+                                            (int32_t)(freqZ[3]*100.0f),(int16_t)maxZ[3],
+                                            (int32_t)(freqZ[4]*100.0f),(int16_t)maxZ[4]
+                                            );
                             err = UdpTx(strbuf, udpSrvAddr);
                             if(err != OT_ERROR_NONE) {
                               NRF_LOG_INFO("%d", err);
